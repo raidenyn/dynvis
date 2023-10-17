@@ -51,6 +51,7 @@ using System.Globalization;
 using System.IO;
 using Microsoft.Win32;
 using System.Collections;
+using DynVis.EventsLog.Properties;
 
 namespace DynVis.Core.VersionFraemwork
 {
@@ -182,7 +183,7 @@ namespace DynVis.Core.VersionFraemwork
 			string installRoot = String.Empty;
 			if (!GetRegistryValue(RegistryHive.LocalMachine, NetfxInstallRootRegKeyName, NetFxInstallRootRegValueName, RegistryValueKind.String, out installRoot))
 			{
-				throw new DirectoryNotFoundException(Properties.Resources.ApplicationExcpetion_UnableToDetermineInstallRoot);
+				throw new DirectoryNotFoundException(Resources.ApplicationExcpetion_UnableToDetermineInstallRoot);
 			}
 			return installRoot;
 		}
