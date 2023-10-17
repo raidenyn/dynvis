@@ -50,7 +50,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -403,7 +403,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties StartDate="20090102" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
+      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090102" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

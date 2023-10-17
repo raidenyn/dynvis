@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DynVis.EventsLog</RootNamespace>
     <AssemblyName>DynVis.EventsLog</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
@@ -101,7 +101,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090108" />
+      <UserProperties StartDate="20090108" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

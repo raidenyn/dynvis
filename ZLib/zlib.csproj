@@ -21,7 +21,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>http://localhost/ICSharpCode.SharpZipLib/</PublishUrl>
     <Install>true</Install>
@@ -175,7 +175,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090117" />
+      <UserProperties StartDate="20090117" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

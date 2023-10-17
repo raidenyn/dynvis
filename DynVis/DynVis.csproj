@@ -10,11 +10,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DynVis</RootNamespace>
     <AssemblyName>DynVis</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetZone>LocalIntranet</TargetZone>
     <GenerateManifests>true</GenerateManifests>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
     <SignManifests>false</SignManifests>
     <ManifestCertificateThumbprint>FE1DBF80BE69A51CF88D302A529DBF609581A56C</ManifestCertificateThumbprint>
     <SignAssembly>false</SignAssembly>
@@ -70,6 +69,10 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

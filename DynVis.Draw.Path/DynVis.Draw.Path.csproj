@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DynVis.Draw.Path</RootNamespace>
     <AssemblyName>DynVis.Draw.Path</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
@@ -93,7 +93,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090213" />
+      <UserProperties StartDate="20090213" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DynVis.Draw.Geomtery</RootNamespace>
     <AssemblyName>DynVis.Draw.Geomtery</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
@@ -123,7 +123,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties StartDate="20090209" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
+      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090209" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
