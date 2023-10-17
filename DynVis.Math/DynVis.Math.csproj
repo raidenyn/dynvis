@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32696FCA-CD8A-43C5-85B8-B988379E6FED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynVis.Math</RootNamespace>
+    <AssemblyName>DynVis.Math</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DynVis.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ApplicateGrid.cs" />
+    <Compile Include="ArrayMathExtended.cs" />
+    <Compile Include="ArrayToString.cs" />
+    <Compile Include="Geometry\Symmetry.cs" />
+    <Compile Include="Geometry\TransformationMatrix.cs" />
+    <Compile Include="Geometry\TransformationMatrixExtension.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\blas.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\hessenberg.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\hsschur.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\nsevd.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\reflections.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\rotations.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\sblas.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\sevd.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\tdevd.cs" />
+    <Compile Include="MathLibrary\Matrix\Eigensystem\tridiagonal.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Geometry\GeometryExtension.cs" />
+    <Compile Include="MathLibrary\levenbergmarquardt.cs" />
+    <Compile Include="libs\ap.cs" />
+    <Compile Include="MathExtended.cs" />
+    <Compile Include="MathLibrary\Matrix\inv.cs" />
+    <Compile Include="MathLibrary\Matrix\lu.cs" />
+    <Compile Include="MathLibrary\Matrix\MatrixCompare.cs" />
+    <Compile Include="MathLibrary\Matrix\mulmatrix.cs" />
+    <Compile Include="Geometry\Points.cs" />
+    <Compile Include="Geometry\PointsExtended.cs" />
+    <Compile Include="MathLibrary\Matrix\trinverse.cs" />
+    <Compile Include="MathLibrary\principalaxis.cs" />
+    <Compile Include="MathLibrary\spline2d.cs" />
+    <Compile Include="MathLibrary\spline3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DynVis.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090209" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

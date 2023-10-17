@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MinimalEnergyPathCalculation" xml:space="preserve">
+    <value>Расчет пути миимальной энергии</value>
+  </data>
+  <data name="PESNotSpecified" xml:space="preserve">
+    <value>ППЭ не определена.</value>
+  </data>
+  <data name="MinimalEnergyPath" xml:space="preserve">
+    <value>Путь реакции минимальной энергии</value>
+  </data>
+  <data name="ReactionDynamic" xml:space="preserve">
+    <value>Динамика реакции</value>
+  </data>
+  <data name="ReactionDynamicCalculation" xml:space="preserve">
+    <value>Расчет динамики реакции</value>
+  </data>
+  <data name="ElementArrayNotFoundOrElementsCountLessThen3" xml:space="preserve">
+    <value>Element array not found or elements count less then 3.</value>
+  </data>
+  <data name="GeometryStructuresNotFoundOrItsCountIsWrong" xml:space="preserve">
+    <value>Geometry structures not found or it's count is wrong.</value>
+  </data>
+  <data name="ScanSurface" xml:space="preserve">
+    <value>Сканирование поверхности</value>
+  </data>
+  <data name="GridValue" xml:space="preserve">
+    <value>Сетка значений</value>
+  </data>
+  <data name="ApplicateArray" xml:space="preserve">
+    <value>Массив аппликат</value>
+  </data>
+  <data name="UbposibleSetReadData" xml:space="preserve">
+    <value>Невозможно обработать прочтенные данные.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Элемент</value>
+  </data>
+  <data name="NumberSymbol" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="Q1" xml:space="preserve">
+    <value>Q1</value>
+  </data>
+  <data name="Q2" xml:space="preserve">
+    <value>Q2</value>
+  </data>
+  <data name="X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="CoordNotMore" xml:space="preserve">
+    <value>Координата №{0} не больше предыдущей.</value>
+  </data>
+  <data name="Energy" xml:space="preserve">
+    <value>Энергия</value>
+  </data>
+  <data name="ReagentSystemStructure" xml:space="preserve">
+    <value>Сруктура реагирующей системы</value>
+  </data>
+  <data name="CalcLEPS" xml:space="preserve">
+    <value>Расчет поверхности методом ЛЭПС</value>
+  </data>
+  <data name="LEPS" xml:space="preserve">
+    <value>ЛЭПС</value>
+  </data>
+  <data name="ErrorInInputData" xml:space="preserve">
+    <value>Ошибка во введеных данных</value>
+  </data>
+  <data name="LEPSParams" xml:space="preserve">
+    <value>Параметры поверхности ЛЭПС</value>
+  </data>
+  <data name="LengthBC" xml:space="preserve">
+    <value>Расстояние B-C</value>
+  </data>
+  <data name="AngleABC" xml:space="preserve">
+    <value>Угол A-B-C</value>
+  </data>
+  <data name="DynamicParams" xml:space="preserve">
+    <value>Параметры динамики реакции</value>
+  </data>
+  <data name="FindStationaryPoint" xml:space="preserve">
+    <value>Нахождение стационарных точек на ППЭ</value>
+  </data>
+  <data name="StationaryPoints" xml:space="preserve">
+    <value>Стационарные точки</value>
+  </data>
+  <data name="CreateSurfaceByApplicateMatrix" xml:space="preserve">
+    <value>Построение поверхности по матрице аппликат</value>
+  </data>
+  <data name="ReadErrorQ1Axes" xml:space="preserve">
+    <value>Проблемы при чтении свойств первой координаты</value>
+  </data>
+  <data name="ReadErrorQ2Axes" xml:space="preserve">
+    <value>Проблемы при чтении свойств второй координаты</value>
+  </data>
+  <data name="ReadErrorQ1Knots" xml:space="preserve">
+    <value>Проблемы при чтении узлов первой координаты</value>
+  </data>
+  <data name="ReadErrorQ2Knots" xml:space="preserve">
+    <value>Проблемы при чтении узлов второй координаты</value>
+  </data>
+  <data name="ReadErrorEnergyArray" xml:space="preserve">
+    <value>Проблема при чтении массива энергий.</value>
+  </data>
+  <data name="AtomsCouldNotBeRepeated" xml:space="preserve">
+    <value>Атомы не могут повторятся</value>
+  </data>
+  <data name="AtomNotSelected" xml:space="preserve">
+    <value>Не выбран атом</value>
+  </data>
+</root>

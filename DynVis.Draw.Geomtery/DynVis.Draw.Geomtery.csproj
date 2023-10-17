@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5AFD035-8F8F-4656-A8D5-96764715592E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynVis.Draw.Geomtery</RootNamespace>
+    <AssemblyName>DynVis.Draw.Geomtery</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DynVis.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="GeometryDraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeometryDraw.Designer.cs">
+      <DependentUpon>GeometryDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometryDrawParamsEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeometryDrawParamsEditor.Designer.cs">
+      <DependentUpon>GeometryDrawParamsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometryDrawProvider.cs" />
+    <Compile Include="Properties\LangResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StatePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatePanel.Designer.cs">
+      <DependentUpon>StatePanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GeometryDraw.resx">
+      <DependentUpon>GeometryDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryDrawParamsEditor.resx">
+      <DependentUpon>GeometryDrawParamsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LangResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatePanel.resx">
+      <DependentUpon>StatePanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynVis.Core\DynVis.Core.csproj">
+      <Project>{0610EE35-6890-47DC-8229-95F89E6501B4}</Project>
+      <Name>DynVis.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Draw\DynVis.Draw.csproj">
+      <Project>{46306CC1-A327-481B-ADE7-196F41DCE8EE}</Project>
+      <Name>DynVis.Draw</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Math\DynVis.Math.csproj">
+      <Project>{32696FCA-CD8A-43C5-85B8-B988379E6FED}</Project>
+      <Name>DynVis.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SourceGrid\SourceGrid.csproj">
+      <Project>{DA47B108-21C8-4293-8D4E-56FFF1ED45A5}</Project>
+      <Name>SourceGrid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DynVis.snk" />
+    <None Include="Properties\DataSources\DynVis.Draw.Geometry.GeometryDrawEngine.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090209" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

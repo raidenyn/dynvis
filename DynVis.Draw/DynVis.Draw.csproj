@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46306CC1-A327-481B-ADE7-196F41DCE8EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynVis.Draw</RootNamespace>
+    <AssemblyName>DynVis.Draw</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\bin\System.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DynVis.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BaseEngine.cs" />
+    <Compile Include="DrawBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawProvider.cs" />
+    <Compile Include="Geometry\AtomGraphProperty.cs" />
+    <Compile Include="ColorFunction.cs" />
+    <Compile Include="Geometry\GeometryDrawEngine.cs" />
+    <Compile Include="GradientColor.cs" />
+    <Compile Include="GraphicsExtension.cs" />
+    <Compile Include="Properties\LangResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenGL\Fonts.cs" />
+    <Compile Include="OpenGL\InitPixelFormat.cs" />
+    <Compile Include="OpenGL\Engine.cs" />
+    <Compile Include="OpenGL\Exception.cs" />
+    <Compile Include="OpenGL\InitFunction.cs" />
+    <Compile Include="Surface\2D\ParamsDrawSurfaceEngineGDI_2D.cs" />
+    <Compile Include="Surface\2D\DrawSurfaceEngineGDI_2D.cs" />
+    <Compile Include="Surface\2D\GeneralDrawSurfaceEngineGDI_2D.cs" />
+    <Compile Include="Surface\3D\DrawSurfaceEngineGL_3D.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynVis.Core\DynVis.Core.csproj">
+      <Project>{0610EE35-6890-47DC-8229-95F89E6501B4}</Project>
+      <Name>DynVis.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Math\DynVis.Math.csproj">
+      <Project>{32696FCA-CD8A-43C5-85B8-B988379E6FED}</Project>
+      <Name>DynVis.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVisEventsLog\DynVis.EventsLog.csproj">
+      <Project>{51734FBC-BE54-44F8-824E-87E7EAC94754}</Project>
+      <Name>DynVis.EventsLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tao\Tao.OpenGl\Tao.OpenGl.csproj">
+      <Project>{6292109B-6BB4-4120-AD56-F409C0285AB6}</Project>
+      <Name>Tao.OpenGl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tao\Tao.Platform.Windows\Tao.Platform.Windows.csproj">
+      <Project>{228201EB-1A36-4E25-B59F-52255CBBE270}</Project>
+      <Name>Tao.Platform.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DynVis.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\LangResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20090209" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

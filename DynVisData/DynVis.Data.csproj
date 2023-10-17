@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C98CFA9B-AA23-4A6A-985A-4E645E58E0D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynVis.Data</RootNamespace>
+    <AssemblyName>DynVis.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynVis.Draw, Version=2.0.5.433, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DynVis.Draw\bin\Release\DynVis.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\bin\System.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GridSurface\Controls\Geometry\FormSetStandartOrientation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Geometry\FormSetStandartOrientation.Designer.cs">
+      <DependentUpon>FormSetStandartOrientation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Geometry\GeometryTransformationFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CalculationMethods\CriticalPoints\CalcCriticalPoints.cs" />
+    <Compile Include="CalculationMethods\CriticalPoints\CriticalPoints.cs" />
+    <Compile Include="CalculationMethods\CriticalPoints\FormCriticalPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculationMethods\CriticalPoints\FormCriticalPoint.Designer.cs">
+      <DependentUpon>FormCriticalPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationMethods\CriticalPoints\PluginInterface.cs" />
+    <Compile Include="CalculationMethods\IRC\CalcIRC.cs" />
+    <Compile Include="CalculationMethods\IRC\IRC.cs" />
+    <Compile Include="CalculationMethods\IRC\PluginInterface.cs" />
+    <Compile Include="CalculationMethods\CriticalPoints\SurfacePoints.cs" />
+    <Compile Include="CalculationMethods\Dynamic\CalcDynamicPath.cs" />
+    <Compile Include="CalculationMethods\Dynamic\DynamicPath.cs" />
+    <Compile Include="CalculationMethods\Dynamic\FormDynamicParamsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculationMethods\Dynamic\FormDynamicParamsEditor.Designer.cs">
+      <DependentUpon>FormDynamicParamsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationMethods\Dynamic\PluginInterface.cs" />
+    <Compile Include="CalculationMethods\LEPS\Axes.cs" />
+    <Compile Include="CalculationMethods\LEPS\Controls\AtomsInteractionParamsLEPS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\Controls\AtomsInteractionParamsLEPS.Designer.cs">
+      <DependentUpon>AtomsInteractionParamsLEPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\Controls\CoordinateParamsLEPS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\Controls\CoordinateParamsLEPS.Designer.cs">
+      <DependentUpon>CoordinateParamsLEPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\FormLEPSEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\FormLEPSEditor.Designer.cs">
+      <DependentUpon>FormLEPSEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\Geometry.cs" />
+    <Compile Include="CalculationMethods\LEPS\IO\Params.cs" />
+    <Compile Include="CalculationMethods\LEPS\LEPS.cs" />
+    <Compile Include="CalculationMethods\LEPS\Params.cs" />
+    <Compile Include="CalculationMethods\LEPS\PluginInterface.cs" />
+    <Compile Include="GridSurface\Geometry\Geometry.cs" />
+    <Compile Include="GridSurface\Geometry\GeometryGrid\GeometryGrid.cs" />
+    <Compile Include="GridSurface\Geometry\GeometryGrid\IO\Geometry.cs" />
+    <Compile Include="GridSurface\Controls\Geometry\GeometryInterfaceFunction.cs" />
+    <Compile Include="GridSurface\GridData.cs" />
+    <Compile Include="GridSurface\IO\IOSurface.cs" />
+    <Compile Include="GridSurface\IO\OpenFile.cs" />
+    <Compile Include="GridSurface\PluginInterface.cs" />
+    <Compile Include="Properties\LangResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\FormGridGeometry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridSurface\FormGridGeometry.Designer.cs">
+      <DependentUpon>FormGridGeometry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\FormGridSurface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridSurface\FormGridSurface.Designer.cs">
+      <DependentUpon>FormGridSurface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Geometry\ElementListEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Geometry\ElementListEditor.Designer.cs">
+      <DependentUpon>ElementListEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Geometry\GeometryEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Geometry\GeometryEditor.Designer.cs">
+      <DependentUpon>GeometryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\GridSurface.cs" />
+    <Compile Include="GridSurface\Controls\Surface\CoordinateEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Surface\CoordinateEditor.Designer.cs">
+      <DependentUpon>CoordinateEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Surface\CoordTypeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Surface\CoordTypeEditor.Designer.cs">
+      <DependentUpon>CoordTypeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Surface\SurfaceGridEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridSurface\Controls\Surface\SurfaceGridEditor.Designer.cs">
+      <DependentUpon>SurfaceGridEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationMethods\LEPS\Surface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalculationMethods\CriticalPoints\FormCriticalPoint.resx">
+      <DependentUpon>FormCriticalPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculationMethods\Dynamic\FormDynamicParamsEditor.resx">
+      <DependentUpon>FormDynamicParamsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculationMethods\LEPS\Controls\AtomsInteractionParamsLEPS.resx">
+      <DependentUpon>AtomsInteractionParamsLEPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculationMethods\LEPS\Controls\CoordinateParamsLEPS.resx">
+      <DependentUpon>CoordinateParamsLEPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculationMethods\LEPS\FormLEPSEditor.resx">
+      <DependentUpon>FormLEPSEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\Controls\Geometry\FormSetStandartOrientation.resx">
+      <DependentUpon>FormSetStandartOrientation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\FormGridGeometry.resx">
+      <DependentUpon>FormGridGeometry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\FormGridSurface.resx">
+      <DependentUpon>FormGridSurface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\Controls\Geometry\ElementListEditor.resx">
+      <DependentUpon>ElementListEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\Controls\Geometry\GeometryEditor.resx">
+      <DependentUpon>GeometryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\Controls\Surface\CoordinateEditor.resx">
+      <DependentUpon>CoordinateEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\Controls\Surface\CoordTypeEditor.resx">
+      <DependentUpon>CoordTypeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridSurface\Controls\Surface\SurfaceGridEditor.resx">
+      <DependentUpon>SurfaceGridEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LangResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevAge.Core\DevAge.Core.csproj">
+      <Project>{3EB346D6-5AE2-42BE-98F9-BFAC1C2C719C}</Project>
+      <Name>DevAge.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevAge.Windows.Forms\DevAge.Windows.Forms.csproj">
+      <Project>{3DF8B880-8A23-4F10-9EAB-D72EF0672C3E}</Project>
+      <Name>DevAge.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Core\DynVis.Core.csproj">
+      <Project>{0610EE35-6890-47DC-8229-95F89E6501B4}</Project>
+      <Name>DynVis.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Draw.Geomtery\DynVis.Draw.Geomtery.csproj">
+      <Project>{D5AFD035-8F8F-4656-A8D5-96764715592E}</Project>
+      <Name>DynVis.Draw.Geomtery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Math\DynVis.Math.csproj">
+      <Project>{32696FCA-CD8A-43C5-85B8-B988379E6FED}</Project>
+      <Name>DynVis.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVisEventsLog\DynVis.EventsLog.csproj">
+      <Project>{51734FBC-BE54-44F8-824E-87E7EAC94754}</Project>
+      <Name>DynVis.EventsLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SourceGrid\SourceGrid.csproj">
+      <Project>{DA47B108-21C8-4293-8D4E-56FFF1ED45A5}</Project>
+      <Name>SourceGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZLib\zlib.csproj">
+      <Project>{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DynVis.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)"  "$(SolutionDir)DynVis\$(OutDir)plugin\"</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090106" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

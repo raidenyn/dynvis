@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C0B706B-BDF1-42BC-BC54-8F56E12A02C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynVis.Draw.Surface</RootNamespace>
+    <AssemblyName>DynVis.Draw.Surface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DynVis.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="2D\SurfacePropertyEditor2D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2D\SurfacePropertyEditor2D.Designer.cs">
+      <DependentUpon>SurfacePropertyEditor2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2D\SurfacePropertyProvider.cs" />
+    <Compile Include="3D\SurfacePropertyEditor3D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3D\SurfacePropertyEditor3D.Designer.cs">
+      <DependentUpon>SurfacePropertyEditor3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawSurface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawSurface.Designer.cs">
+      <DependentUpon>DrawSurface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawSurfaceBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2D\DrawSurfaceGDI_2D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2D\DrawSurfaceGDI_2D.Designer.cs">
+      <DependentUpon>DrawSurfaceGDI_2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3D\DrawSurface3DProvider.cs" />
+    <Compile Include="3D\DrawSurfaceGL_3D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3D\DrawSurfaceGL_3D.Designer.cs">
+      <DependentUpon>DrawSurfaceGL_3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\LangResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="2D\SurfacePropertyEditor2D.resx">
+      <DependentUpon>SurfacePropertyEditor2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3D\SurfacePropertyEditor3D.resx">
+      <DependentUpon>SurfacePropertyEditor3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawSurface.resx">
+      <DependentUpon>DrawSurface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2D\DrawSurfaceGDI_2D.resx">
+      <DependentUpon>DrawSurfaceGDI_2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3D\DrawSurfaceGL_3D.resx">
+      <DependentUpon>DrawSurfaceGL_3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LangResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynVis.Core\DynVis.Core.csproj">
+      <Project>{0610EE35-6890-47DC-8229-95F89E6501B4}</Project>
+      <Name>DynVis.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Draw\DynVis.Draw.csproj">
+      <Project>{46306CC1-A327-481B-ADE7-196F41DCE8EE}</Project>
+      <Name>DynVis.Draw</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Math\DynVis.Math.csproj">
+      <Project>{32696FCA-CD8A-43C5-85B8-B988379E6FED}</Project>
+      <Name>DynVis.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVisEventsLog\DynVis.EventsLog.csproj">
+      <Project>{51734FBC-BE54-44F8-824E-87E7EAC94754}</Project>
+      <Name>DynVis.EventsLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DynVis.snk" />
+    <None Include="Properties\DataSources\DrawSurfaceEngineGDI_2D.datasource" />
+    <None Include="Properties\DataSources\DrawSurfaceEngineGL_3D.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20090218" AssemblyFileVersion="0" AssemblyVersion="0" Reset="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

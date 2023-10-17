@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0610EE35-6890-47DC-8229-95F89E6501B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynVis.Core</RootNamespace>
+    <AssemblyName>DynVis.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>DynVis.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\Update\FormCheckNewVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\Update\FormCheckNewVersion.Designer.cs">
+      <DependentUpon>FormCheckNewVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\Update\Updater.cs" />
+    <Compile Include="About\Version.cs" />
+    <Compile Include="Application\ApplicationExtension.cs" />
+    <Compile Include="Application\Culture.cs" />
+    <Compile Include="Controls\BrushEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BrushEditor.Designer.cs">
+      <DependentUpon>BrushEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EnumEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FontEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FontEditor.Designer.cs">
+      <DependentUpon>FontEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PenEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PenEditor.Designer.cs">
+      <DependentUpon>PenEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geometry\Extension\FormGeometryExtension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geometry\Extension\FormGeometryExtension.Designer.cs">
+      <DependentUpon>FormGeometryExtension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geometry\FormCoordinateView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geometry\FormCoordinateView.Designer.cs">
+      <DependentUpon>FormCoordinateView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditor\ObjectPropertiesEditorBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditor\ObjectPropertyEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditor\ObjectPropertyEditor.Designer.cs">
+      <DependentUpon>ObjectPropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditor\FormProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditor\FormProperties.Designer.cs">
+      <DependentUpon>FormProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditor\Properties.cs" />
+    <Compile Include="PropertyEditor\PropertyEditor.cs" />
+    <Compile Include="ReactionData\IOReactionData.cs" />
+    <Compile Include="Surface\Axes.cs" />
+    <Compile Include="Surface\IO\FormFileProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surface\IO\FormFileProperty.Designer.cs">
+      <DependentUpon>FormFileProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surface\IO\IOSurface.cs" />
+    <Compile Include="Surface\Surface.cs" />
+    <Compile Include="UserCallback\BugReports\BugReports.cs" />
+    <Compile Include="UserCallback\Callback.cs" />
+    <Compile Include="UserCallback\EMail.cs" />
+    <Compile Include="UserCallback\BugReports\FormBugReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCallback\BugReports\FormBugReport.Designer.cs">
+      <DependentUpon>FormBugReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCallback\FormCallBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCallback\FormCallBack.Designer.cs">
+      <DependentUpon>FormCallBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCallback\PlatformDepend.cs" />
+    <Compile Include="UserCallback\UserMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCallback\UserMessage.Designer.cs">
+      <DependentUpon>UserMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collections.cs" />
+    <Compile Include="Controls\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DecimalEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DecimalEditor.Designer.cs">
+      <DependentUpon>DecimalEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormWaitResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FormWaitResult.Designer.cs">
+      <DependentUpon>FormWaitResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentPointInformation\CurrentPointInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurrentPointInformation\CurrentPointInformation.Designer.cs">
+      <DependentUpon>CurrentPointInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delegates.cs" />
+    <Compile Include="DesignerDetector.cs" />
+    <Compile Include="Dimmension\CompositeDimensionSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dimmension\CompositeDimensionSelector.Designer.cs">
+      <DependentUpon>CompositeDimensionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dimmension\Dimension.cs" />
+    <Compile Include="Dimmension\Dimensions.cs" />
+    <Compile Include="Dimmension\DimmensionSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dimmension\DimmensionSelector.Designer.cs">
+      <DependentUpon>DimmensionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dimmension\PhysicalValueEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dimmension\PhysicalValueEditor.Designer.cs">
+      <DependentUpon>PhysicalValueEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dimmension\ScaleDimensionSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dimmension\ScaleDimensionSelector.Designer.cs">
+      <DependentUpon>ScaleDimensionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elements\Elements.cs" />
+    <Compile Include="Elements\ElementSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Elements\ElementSelector.Designer.cs">
+      <DependentUpon>ElementSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elements\ElementsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Elements\ElementsTable.Designer.cs">
+      <DependentUpon>ElementsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elements\FormElementTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elements\FormElementTable.Designer.cs">
+      <DependentUpon>FormElementTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormUntilBeforValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FormUntilBeforValues.Designer.cs">
+      <DependentUpon>FormUntilBeforValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geometry\Bond.cs" />
+    <Compile Include="Geometry\GeometryInterface.cs" />
+    <Compile Include="GlobalParams\GlobalParams.cs" />
+    <Compile Include="IO\IOFileGeneral.cs" />
+    <Compile Include="IO\IOFile.cs" />
+    <Compile Include="IO\IOFileDialog.cs" />
+    <Compile Include="IO\IOObject.cs" />
+    <Compile Include="Path\IO\Path.cs" />
+    <Compile Include="Path\Path.cs" />
+    <Compile Include="Path\PathExtended.cs" />
+    <Compile Include="Path\PathInterface.cs" />
+    <Compile Include="Path\PathList.cs" />
+    <Compile Include="Path\PathListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Path\PathListView.Designer.cs">
+      <DependentUpon>PathListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Path\PathTimer.cs" />
+    <Compile Include="Plugin\LoadPlugin.cs" />
+    <Compile Include="Plugin\PluginInterface.cs" />
+    <Compile Include="Points\FormPointEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Points\FormPointEditor.Designer.cs">
+      <DependentUpon>FormPointEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Points\PointsInterface.cs" />
+    <Compile Include="Points\SurfacePoints.cs" />
+    <Compile Include="Points\SurfacePointsExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Points\SurfacePointsExplorer.Designer.cs">
+      <DependentUpon>SurfacePointsExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress\FormProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress\FormProgressBar.Designer.cs">
+      <DependentUpon>FormProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress\ProgressNotifier.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress\ProgressNotifier.Designer.cs">
+      <DependentUpon>ProgressNotifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReactionData\ReactionData.cs" />
+    <Compile Include="Properties\LangDimension.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangDimension.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\LangGeneral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LangGeneral.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization.cs" />
+    <Compile Include="StringExtended.cs" />
+    <Compile Include="Controls\UntilBeforValues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UntilBeforValues.Designer.cs">
+      <DependentUpon>UntilBeforValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surface\AxesInterface.cs" />
+    <Compile Include="Surface\SurfaceExtension.cs" />
+    <Compile Include="Surface\SurfaceInterface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\Update\FormCheckNewVersion.resx">
+      <DependentUpon>FormCheckNewVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BrushEditor.resx">
+      <DependentUpon>BrushEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FontEditor.resx">
+      <DependentUpon>FontEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PenEditor.resx">
+      <DependentUpon>PenEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geometry\Extension\FormGeometryExtension.resx">
+      <DependentUpon>FormGeometryExtension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geometry\FormCoordinateView.resx">
+      <DependentUpon>FormCoordinateView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditor\ObjectPropertyEditor.resx">
+      <DependentUpon>ObjectPropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditor\FormProperties.resx">
+      <DependentUpon>FormProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surface\IO\FormFileProperty.resx">
+      <DependentUpon>FormFileProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCallback\BugReports\FormBugReport.resx">
+      <DependentUpon>FormBugReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCallback\FormCallBack.resx">
+      <DependentUpon>FormCallBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCallback\UserMessage.resx">
+      <DependentUpon>UserMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormWaitResult.resx">
+      <DependentUpon>FormWaitResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentPointInformation\CurrentPointInformation.resx">
+      <DependentUpon>CurrentPointInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dimmension\CompositeDimensionSelector.resx">
+      <DependentUpon>CompositeDimensionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dimmension\DimmensionSelector.resx">
+      <DependentUpon>DimmensionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dimmension\PhysicalValueEditor.resx">
+      <DependentUpon>PhysicalValueEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dimmension\ScaleDimensionSelector.resx">
+      <DependentUpon>ScaleDimensionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elements\ElementSelector.resx">
+      <DependentUpon>ElementSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elements\ElementsTable.resx">
+      <DependentUpon>ElementsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elements\FormElementTable.resx">
+      <DependentUpon>FormElementTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormUntilBeforValues.resx">
+      <DependentUpon>FormUntilBeforValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Path\PathListView.resx">
+      <DependentUpon>PathListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Points\FormPointEditor.resx">
+      <DependentUpon>FormPointEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Points\SurfacePointsExplorer.resx">
+      <DependentUpon>SurfacePointsExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress\FormProgressBar.resx">
+      <DependentUpon>FormProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UntilBeforValues.resx">
+      <DependentUpon>UntilBeforValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LangDimension.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangDimension.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LangGeneral.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangGeneral.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevAge.Core\DevAge.Core.csproj">
+      <Project>{3EB346D6-5AE2-42BE-98F9-BFAC1C2C719C}</Project>
+      <Name>DevAge.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevAge.Windows.Forms\DevAge.Windows.Forms.csproj">
+      <Project>{3DF8B880-8A23-4F10-9EAB-D72EF0672C3E}</Project>
+      <Name>DevAge.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVis.Math\DynVis.Math.csproj">
+      <Project>{32696FCA-CD8A-43C5-85B8-B988379E6FED}</Project>
+      <Name>DynVis.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynVisEventsLog\DynVis.EventsLog.csproj">
+      <Project>{51734FBC-BE54-44F8-824E-87E7EAC94754}</Project>
+      <Name>DynVis.EventsLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SourceGrid.Extensions\SourceGrid.Extensions.csproj">
+      <Project>{81925514-5708-4649-9538-36CAD48CF2D5}</Project>
+      <Name>SourceGrid.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SourceGrid\SourceGrid.csproj">
+      <Project>{DA47B108-21C8-4293-8D4E-56FFF1ED45A5}</Project>
+      <Name>SourceGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZLib\zlib.csproj">
+      <Project>{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DynVis.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\System.Drawing.Pen.datasource" />
+    <None Include="Resources\surface.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reset="0" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20090219" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Exsa" xml:space="preserve">
+    <value>Экса</value>
+  </data>
+  <data name="Iotta" xml:space="preserve">
+    <value>Йотта</value>
+  </data>
+  <data name="Zetta" xml:space="preserve">
+    <value>Зетта</value>
+  </data>
+  <data name="Peta" xml:space="preserve">
+    <value>Пета</value>
+  </data>
+  <data name="Tera" xml:space="preserve">
+    <value>Тера</value>
+  </data>
+  <data name="Giga" xml:space="preserve">
+    <value>Гига</value>
+  </data>
+  <data name="Mega" xml:space="preserve">
+    <value>Мега</value>
+  </data>
+  <data name="Kilo" xml:space="preserve">
+    <value>Кило</value>
+  </data>
+  <data name="Hecto" xml:space="preserve">
+    <value>Гекто</value>
+  </data>
+  <data name="Deca" xml:space="preserve">
+    <value>Дека</value>
+  </data>
+  <data name="Deci" xml:space="preserve">
+    <value>Деци</value>
+  </data>
+  <data name="Santi" xml:space="preserve">
+    <value>Санти</value>
+  </data>
+  <data name="Milli" xml:space="preserve">
+    <value>Милли</value>
+  </data>
+  <data name="Micro" xml:space="preserve">
+    <value>Микро</value>
+  </data>
+  <data name="Nano" xml:space="preserve">
+    <value>Нано</value>
+  </data>
+  <data name="Pico" xml:space="preserve">
+    <value>Пико</value>
+  </data>
+  <data name="Femto" xml:space="preserve">
+    <value>Фемто</value>
+  </data>
+  <data name="Atto" xml:space="preserve">
+    <value>Атто</value>
+  </data>
+  <data name="Zepto" xml:space="preserve">
+    <value>Зепто</value>
+  </data>
+  <data name="Iokto" xml:space="preserve">
+    <value>Йокто</value>
+  </data>
+  <data name="Iotta_s" xml:space="preserve">
+    <value>И</value>
+  </data>
+  <data name="Zetta_s" xml:space="preserve">
+    <value>З</value>
+  </data>
+  <data name="Exsa_s" xml:space="preserve">
+    <value>Э</value>
+  </data>
+  <data name="Peta_s" xml:space="preserve">
+    <value>П</value>
+  </data>
+  <data name="Тera_s" xml:space="preserve">
+    <value>Т</value>
+  </data>
+  <data name="Giga_s" xml:space="preserve">
+    <value>Г</value>
+  </data>
+  <data name="Mega_s" xml:space="preserve">
+    <value>М</value>
+  </data>
+  <data name="Kilo_s" xml:space="preserve">
+    <value>к</value>
+  </data>
+  <data name="Hecto_s" xml:space="preserve">
+    <value>г</value>
+  </data>
+  <data name="Deca_s" xml:space="preserve">
+    <value>да</value>
+  </data>
+  <data name="Deci_s" xml:space="preserve">
+    <value>д</value>
+  </data>
+  <data name="Santi_s" xml:space="preserve">
+    <value>с</value>
+  </data>
+  <data name="Mili_s" xml:space="preserve">
+    <value>м</value>
+  </data>
+  <data name="Micro_s" xml:space="preserve">
+    <value>мк</value>
+  </data>
+  <data name="Nano_s" xml:space="preserve">
+    <value>н</value>
+  </data>
+  <data name="Pico_s" xml:space="preserve">
+    <value>п</value>
+  </data>
+  <data name="Femto_s" xml:space="preserve">
+    <value>ф</value>
+  </data>
+  <data name="Atto_s" xml:space="preserve">
+    <value>а</value>
+  </data>
+  <data name="Zepto_s" xml:space="preserve">
+    <value>з</value>
+  </data>
+  <data name="Iokto_s" xml:space="preserve">
+    <value>й</value>
+  </data>
+  <data name="Dimensionless" xml:space="preserve">
+    <value>Безразмерная величина</value>
+  </data>
+  <data name="Dimensionless_s" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Длина</value>
+  </data>
+  <data name="Length_Metr" xml:space="preserve">
+    <value>{0}Метр</value>
+  </data>
+  <data name="Length_Angstrom" xml:space="preserve">
+    <value>{0}Ангстрем</value>
+  </data>
+  <data name="Length_Bohr" xml:space="preserve">
+    <value>{0}Бор</value>
+  </data>
+  <data name="Length_Metr_s" xml:space="preserve">
+    <value>{0}м</value>
+  </data>
+  <data name="Length_Angstrom_s" xml:space="preserve">
+    <value>{0}Å</value>
+  </data>
+  <data name="Length_Bohr_s" xml:space="preserve">
+    <value>{0}Бор</value>
+  </data>
+  <data name="ReciprocalLength" xml:space="preserve">
+    <value>Обратная длина</value>
+  </data>
+  <data name="ReciprocalLength_Metr" xml:space="preserve">
+    <value>Обратный {0}метр</value>
+  </data>
+  <data name="ReciprocalLength_Metr_s" xml:space="preserve">
+    <value>1/{0}м</value>
+  </data>
+  <data name="ReciprocalLength_Angstrom" xml:space="preserve">
+    <value>Обратный {0}Ангстрем</value>
+  </data>
+  <data name="ReciprocalLength_Angstrom_s" xml:space="preserve">
+    <value>1/{0}Å</value>
+  </data>
+  <data name="ReciprocalLength_Bohr" xml:space="preserve">
+    <value>Обратный {0}Бор</value>
+  </data>
+  <data name="ReciprocalLength_Bohr_s" xml:space="preserve">
+    <value>1/{0}Бор</value>
+  </data>
+  <data name="Mass" xml:space="preserve">
+    <value>Масса</value>
+  </data>
+  <data name="Mass_Gram" xml:space="preserve">
+    <value>{0}Грам</value>
+  </data>
+  <data name="Mass_Gram_s" xml:space="preserve">
+    <value>{0}г</value>
+  </data>
+  <data name="Mass_Dalton" xml:space="preserve">
+    <value>{0}Дальто́н</value>
+  </data>
+  <data name="Mass_Dalton_s" xml:space="preserve">
+    <value>{0}а.е.м</value>
+  </data>
+  <data name="Energy" xml:space="preserve">
+    <value>Энергия</value>
+  </data>
+  <data name="Energy_Joule" xml:space="preserve">
+    <value>{0}Джоуль</value>
+  </data>
+  <data name="Energy_Joule_s" xml:space="preserve">
+    <value>{0}Дж</value>
+  </data>
+  <data name="Energy_Hartree" xml:space="preserve">
+    <value>{0}Хартри</value>
+  </data>
+  <data name="Energy_Haretree_s" xml:space="preserve">
+    <value>{0}Х</value>
+  </data>
+  <data name="Energy_Calorie" xml:space="preserve">
+    <value>{0}Калория</value>
+  </data>
+  <data name="Energy_Calorie_s" xml:space="preserve">
+    <value>{0}кал</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="Time_Second" xml:space="preserve">
+    <value>{0}Секунда</value>
+  </data>
+  <data name="Time_Second_s" xml:space="preserve">
+    <value>{0}с</value>
+  </data>
+  <data name="Force" xml:space="preserve">
+    <value>Сила</value>
+  </data>
+  <data name="Force_Newton" xml:space="preserve">
+    <value>{0}Ньютон</value>
+  </data>
+  <data name="Force_Newton_s" xml:space="preserve">
+    <value>{0}Н</value>
+  </data>
+  <data name="Force_Dinah" xml:space="preserve">
+    <value>{0}Дина</value>
+  </data>
+  <data name="Force_Dinah_s" xml:space="preserve">
+    <value>{0}Дин</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>Угол</value>
+  </data>
+  <data name="Angle_Degree" xml:space="preserve">
+    <value>{0}Градус</value>
+  </data>
+  <data name="Angle_Degree_s" xml:space="preserve">
+    <value>{0}град</value>
+  </data>
+  <data name="Angle_Radian" xml:space="preserve">
+    <value>{0}Радиан</value>
+  </data>
+  <data name="Angle_Radian_s" xml:space="preserve">
+    <value>{0}рад</value>
+  </data>
+  <data name="ArrayLengthCanntBeNull" xml:space="preserve">
+    <value>Length allowed dimensions array can not be null</value>
+  </data>
+</root>

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NothingToSave" xml:space="preserve">
+    <value>Отсутствует информация для сохранания.</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>Сохранение объекта</value>
+  </data>
+  <data name="PESPointsFounded" xml:space="preserve">
+    <value>Найдены точки на ППЭ.</value>
+  </data>
+  <data name="ReactionPathCreated" xml:space="preserve">
+    <value>Создан путь реакции.</value>
+  </data>
+  <data name="GeometryCreated" xml:space="preserve">
+    <value>Создана геомтерия реагируюзей системы.</value>
+  </data>
+  <data name="CreatingGeometryWithoutPESUnpossible" xml:space="preserve">
+    <value>Создание геометрии реагируюзей системы без ППЭ невозможно.</value>
+  </data>
+  <data name="PesCreated" xml:space="preserve">
+    <value>Создана ППЭ.</value>
+  </data>
+  <data name="RemoveSelectedPaths" xml:space="preserve">
+    <value>Удалить выбранные пути?</value>
+  </data>
+  <data name="ReactionPaths" xml:space="preserve">
+    <value>Пути реакции</value>
+  </data>
+  <data name="PathNamberColumnCaption" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="PathNameColumnCaption" xml:space="preserve">
+    <value>Путь реакции</value>
+  </data>
+  <data name="ReactionPathList" xml:space="preserve">
+    <value>Список путей реакции</value>
+  </data>
+  <data name="CanNotConnect" xml:space="preserve">
+    <value>Невозможно установить соединение с сервером.</value>
+  </data>
+  <data name="NewVersionAvailable" xml:space="preserve">
+    <value>Доступна новая версия.</value>
+  </data>
+  <data name="CurrentVersion" xml:space="preserve">
+    <value>Текущая версия: </value>
+  </data>
+  <data name="AvailableVersion" xml:space="preserve">
+    <value>Доступная версия: </value>
+  </data>
+  <data name="CurrentVersionIsUpToDate" xml:space="preserve">
+    <value>Вы используете самую свежую версию программы.</value>
+  </data>
+  <data name="DynVisBugReport" xml:space="preserve">
+    <value>DynVis Bug Report</value>
+  </data>
+  <data name="InputWrongEmail" xml:space="preserve">
+    <value>Вы ввели неверный адресс эдектронной почты</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Сообщение об ошибке</value>
+  </data>
+  <data name="SendingMessage" xml:space="preserve">
+    <value>Отправка сообщения</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Сообщение отправлено</value>
+  </data>
+  <data name="MessageDoesNotSend" xml:space="preserve">
+    <value>Не удалось отправить сообщение</value>
+  </data>
+  <data name="BugReport" xml:space="preserve">
+    <value>Отчет об ошибке программы </value>
+  </data>
+  <data name="UserComment" xml:space="preserve">
+    <value>Комментарий пользователя: </value>
+  </data>
+  <data name="UserEmail" xml:space="preserve">
+    <value>Электронный адресс пользователя: </value>
+  </data>
+  <data name="ExceptionText" xml:space="preserve">
+    <value>Сообщение об исключении:</value>
+  </data>
+  <data name="ProgrammLog" xml:space="preserve">
+    <value>Лог программы</value>
+  </data>
+  <data name="CallbackEmail" xml:space="preserve">
+    <value>Электронная почта для ответа: </value>
+  </data>
+  <data name="DynVisResponse" xml:space="preserve">
+    <value>Отзыв о программе DynVis</value>
+  </data>
+  <data name="ApplicateMatrix" xml:space="preserve">
+    <value>Матрица аппликат</value>
+  </data>
+  <data name="Coordinate" xml:space="preserve">
+    <value>Координата</value>
+  </data>
+  <data name="FileCreating" xml:space="preserve">
+    <value>Создание файла</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Таблица</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Q1" xml:space="preserve">
+    <value>Q1</value>
+  </data>
+  <data name="Q2" xml:space="preserve">
+    <value>Q2</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Addition" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="NumberInputWrong" xml:space="preserve">
+    <value>Неверно введено число!</value>
+  </data>
+  <data name="ValueInputWrong" xml:space="preserve">
+    <value>Введены неверные значения</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>Точка</value>
+  </data>
+  <data name="StationaryPoint" xml:space="preserve">
+    <value>Стационараня точка</value>
+  </data>
+  <data name="MinimumPoint" xml:space="preserve">
+    <value>Точка минимума</value>
+  </data>
+  <data name="MaximumPoint" xml:space="preserve">
+    <value>Точка максимума</value>
+  </data>
+  <data name="SaddlePoint" xml:space="preserve">
+    <value>Седловая точка</value>
+  </data>
+  <data name="UnknowTypePoint" xml:space="preserve">
+    <value>Точки неизвестного типа</value>
+  </data>
+  <data name="MassOf" xml:space="preserve">
+    <value>Масса: {0} a.е.м.</value>
+  </data>
+  <data name="NumberOf" xml:space="preserve">
+    <value>{1}{0}Номер: {2}{0}Масса: {3}</value>
+  </data>
+  <data name="SurfacePoints" xml:space="preserve">
+    <value>Точки поверхности</value>
+  </data>
+  <data name="CustomizationPproperties" xml:space="preserve">
+    <value>Настройка параметров</value>
+  </data>
+  <data name="FontIsWrong" xml:space="preserve">
+    <value>Шрифт не поддерживается</value>
+  </data>
+  <data name="CoordFile" xml:space="preserve">
+    <value>Файл координат</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Элемент</value>
+  </data>
+  <data name="NumberSymbol" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+</root>
